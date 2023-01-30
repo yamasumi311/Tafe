@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Cakes for All Occasions!</title>
+    <link rel="stylesheet" href="css/specialcakesstyles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="company logo"></a><br>
+        <img src="web_images/Strawberry_cupcakes1200.jpg" 
+                                  alt="strawberry cupcakes"
+                                  class="banner">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="cakesForSale.html">Cakes for Sale</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="contactUs.html">Contact us</a></li>
+        </ul> 
+    </nav>
+   
+    <div id="gallery">
+        <h1>Cakes for Sale</h1>
+        <div class="product-item-info">
+            <img src="images/small/specialOccasion300.jpg" 
+                 alt="Speciality cake"
+                 data-full-size-url="images/large/specialOccasion900.jpg">
+            <h3>Speciality Cakes</h3>
+            <p>Can be made to match dietary requirements</p>
+        </div>  
+        <div class="product-item-info">
+            <img src="images/small/lemonCake300.jpg"
+                 alt="Flavoured cake"
+                 data-full-size-url="images/large/lemonCake900.jpg">
+            <h3>Flavoured Cakes</h3>
+            <p>Contains gluten, dairy, nuts and eggs. 
+                Strawberry cakes contain strawberries.</p>
+        </div>
+        <div class="product-item-info">
+            <img src="images/small/cheeseCake300.jpg"
+                 alt="Cheesecake"
+                 data-full-size-url="images/large/cheeseCake640.jpg">
+            <h3>Cheese Cakes</h3>
+            <p>Contains gluten and dairy.</p>
+        </div>
+        <div class="product-item-info">
+            <img src="images/small/brownie300.jpg"
+                 alt="Brownie"
+                 data-full-size-url="images/large/brownie640.jpg">
+            <h3>Brownies</h3>
+            <p>Contains dairy, nuts and eggs</p>
+        </div>
+        <div class="product-item-info">
+            <img src="images/small/cupcake300.jpg"
+                 alt="Cupcakes"
+                 data-full-size-url="images/large/cupcake640.jpg">
+            <h3>Cupcakes</h3>
+            <p>Contains gluten, dairy, nuts and eggs</p>
+        </div>
+        <div class="product-item-info">
+            <img src="images/small/macaron300.jpg"
+                 alt="Macarons"
+                 data-full-size-url="images/large/macaron640.jpg">
+            <h3>Macarons</h3>
+            <p>Contains gluten, dairy, nuts and eggs</p>
+        </div>
+    </div>
+
+    <br>
+    
+    <figure>
+    <figcaption>Price</figcaption>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cake Size</th>
+                    <th>Suitable for</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Small</td>
+                    <td>8-10 people</td>
+                    <td>$50.00</td>
+                <tr>
+                    <td>Medium</td>
+                    <td>10-12 people</td>
+                    <td>$60.00</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>16-20 people</td>
+                    <td>$100.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    
+    <br>
+    <h2>How to order</h2>
+        <p>If you’re interested in ordering a cake for your special occasion, let us know!</p>
+
+        <div class="form">
+            <form name="cake_ordering_from" action="submit.html" method="post">
+                <!-- name -->
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name..."><br>
+
+                <!-- email -->
+                <label for="email">Email Address</label><br>
+                <input type="text" id="email" name="email" placeholder="Your Email Address..."><br>
+
+                <!-- phone -->
+                <label for="phone">Phone Number</label><br>
+                <input type="text" id="phone" name="phone" placeholder="Your Phone Number..."><br>
+                
+                <!-- select cake type -->
+                <label for="cake">Select cake type</label><br>
+                <select id="cake" name="cake">
+                    <option value="Select cake type">Select cake type</option>
+                    <option value="speciality">Speciality Cake</option>
+                    <option value="flavoured">Flavoured Cake</option>
+                    <option value="cheese">Cheesecake</option>
+                    <option value="brownie">Brownie</option>
+                    <option value="cupcakes">Cupcakes</option>
+                    <option value="macarons">Macarons</option>
+                </select><br>
+
+                <!-- cake size -->
+                <label>Cake Size</label><br>
+                <input type="radio" name="size" value="small">Small<br>
+                <input type="radio" name="size" value="medium">Medium<br>
+                <input type="radio" name="size" value="large">Large<br>
+                <br>
+
+                <!-- date required -->
+                <label for="date">Date required</label><br>
+                <input type="date" id="date" name="date"><br><br>
+
+                <!-- comment -->
+                <label for="comment">Comment</label><br>
+                <input type="text" id="comment" name="comment" placeholder="If you require any special adjustment, please let us know!"><br>
+
+                <!-- submit Buttuon -->
+                <input type="Submit" value="Submit">              
+            </form>
+        </div>
+    <footer>
+        &copy; 2022 Masumi Yamaura
+    </footer>
+    <div id="overlay" class="hidden">
+        <button id="overlay-close">X</button>
+        <div class="layout">
+            <button id="button-previous"> &lt; </button>
+            <span id="large-image-placeholder"></span>
+            <button id="button-next"> &gt; </button>
+        </div>
+    </div>
+
+    <script src="script/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* classes
+.burntred {
+	color: #E94D40;
+}
+
+.navyblue {
+	color: #0C243C;
+}
+
+.specialcakesfont {
+	font-family: Arial, sans-serif;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.clearboth {
+	clear: both;
+} */
+
+/* CSS Document */
+body {
+	font-size: 1em;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.layout button {
+    width: 70px;
+    height: 70px;
+    font-size: 200%;
+}
+
+.layout {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* navigation bar */
+nav ul {
+	list-style-type: none;
+	margin: 0 auto 5px;
+	padding: 0;
+	background-color: #0C243C;
+	font-size: 14pt;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: whitesmoke;
+	color: #0C243C
+}
+
+nav .active {
+	background-color: #E94D40;
+	font-weight: bold;
+}
+
+/* footer */
+footer {
+	background-color: #0C243C;
+	color: white;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* form */
+input[type=text],
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+#query,
+#comment {
+	padding: 12px 20px 100px;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #0C243C;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+
+input[type=submit]:hover {
+	background-color: #E94D40;
+}
+
+.form {
+	border-radius: 5px;
+	background-color: antiquewhite;
+	padding: 20px 20px 5px;
+	max-width: 750px;
+	margin: 10px auto;
+	text-align: left;
+}
+
+/* table */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: auto;
+	max-width: 750px;
+}
+
+td,
+th {
+	border: 1px solid white;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: #0C243C;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: rgb(214, 228, 223);
+}
+
+/* enlarge cake images */
+div img {
+	cursor: zoom-in;
+}
+
+#overlay {
+	height: 100vh;
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	background-color:#0c243ca4;
+}
+
+.hidden {
+	display: none;
+}
+
+#gallery a {
+	display: inline-block;
+}
+
+#overlay-close {
+	right: 80px;
+	position: absolute;
+	top: 50px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	font-size: 200%;
+	transition: transform 300ms;
+}
+
+button#overlay-close:hover {
+	transform: scale(1.5);
+	/* background-color: #ccc; */
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+/*product item info*/
+.product-item-info {
+	display: inline-block;
+	width: 300px;
+	height: 350px;
+	margin: .5em;
+	box-shadow:#0c243c65 2px 2px 5px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+#gallery {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.banner {
+	width: 100%;
+	height: 100%;
+	max-height: 750px;
+}
+
+.photo {
+	width: 100%;
+	max-width: 750px;
+	height: 100%;
+	max-height: 750px;
+}
+
+/* form */
+figcaption {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: .5em;
+}
+
+label {
+	font-weight: bold;
+}

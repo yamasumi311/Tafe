@@ -1,0 +1,5 @@
+Header always set Strict-Transport-Security "max-age=63072000"
+Header always set Content-Security-Policy "default-src 'self'; frame-ancestors 'none'"
+Header always set X-Content-Type-Options nosniff
+# Block site from being framed with X-Frame-Options
+Header always set X-Frame-Options DENY
