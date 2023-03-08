@@ -28,7 +28,7 @@
 body {
 	font-size: 1em;
 	text-align: center;
-	font-family: Arial, sans-serif;
+	/* font-family: Arial, sans-serif; */
 	max-width: 1200px;
 	margin: auto;
 }
@@ -69,7 +69,8 @@ nav li a {
 
 nav li a:hover {
 	background-color: whitesmoke;
-	color: #0C243C
+	color: #0C243C;
+	transition: all .5s ease-out;	
 }
 
 nav .active {
